@@ -1,21 +1,6 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -28,15 +13,36 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .logo {
+    animation: logo-spin infinite 10s linear;
   }
 }
 
-.card {
-  padding: 2em;
+.reactExpressHeader{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.reactExpressPanel{
+  display: flex;
+  flex-direction: row;
+  gap:88px;
+}
+
+.reactExpressPanelItems{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding:10px;
+  width:200px;
+  height: 200px;
+  background: rgb(20,158,202);
+  background: linear-gradient(235deg, rgba(20,158,202,1) 0%, rgba(20,202,126,1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 4px;
+  border-radius: 15px;
+}
+.reactExpressPanelItems p{
+  color:white;
+  font-weight: bolder;
 }
